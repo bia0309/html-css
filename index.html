@@ -1,1 +1,219 @@
-BOOKTIP
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <title>KPOPLACE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Chakra Petch', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 100%);
+            color: #fff;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        header {
+            font-size: 3rem;
+            font-weight: 700;
+            text-align: center;
+            padding: 25px;
+            color: #ff4b91;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-shadow: 0 0 15px rgba(255, 75, 145, 0.7);
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border: 1px solid #ff4b91;
+            box-shadow: 0 0 20px rgba(255, 75, 145, 0.5);
+        }
+        
+        .chamada {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            padding: 40px 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            margin-bottom: 40px;
+            border: 1px solid #4a4a8a;
+        }
+        
+        .chamada-texto h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #ff4b91;
+            text-shadow: 0 0 10px rgba(255, 75, 145, 0.6);
+        }
+        
+        .chamada-texto p {
+            font-size: 1.3rem;
+            color: #b19cff;
+            font-weight: 500;
+        }
+        
+        iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            border-radius: 10px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+            border: 2px solid #ff4b91;
+        }
+        
+        .categoria {
+            margin-top: 40px;
+            padding: 25px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            border: 1px solid #4a4a8a;
+        }
+        
+        .categoria h2 {
+            font-size: 2rem;
+            margin-bottom: 25px;
+            color: #b19cff;
+            border-left: 5px solid #ff4b91;
+            padding-left: 15px;
+            text-shadow: 0 0 8px rgba(177, 156, 255, 0.6);
+        }
+        
+        .categoria-videos {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        
+        .categoria-videos a {
+            display: block;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        
+        .categoria-videos a:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 20px rgba(255, 75, 145, 0.8);
+        }
+        
+        .categoria-videos a:hover::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255, 75, 145, 0.3) 0%, rgba(177, 156, 255, 0.3) 100%);
+        }
+        
+        .categoria-videos img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.5s ease;
+        }
+        
+        .categoria-videos a:hover img {
+            transform: scale(1.1);
+        }
+        
+        @media (min-width: 768px) {
+            .chamada {
+                flex-direction: row;
+                justify-content: center;
+                text-align: left;
+            }
+            
+            .chamada-texto {
+                flex: 1;
+            }
+            
+            .categoria-videos {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+        
+        @media (max-width: 600px) {
+            header {
+                font-size: 2.2rem;
+                padding: 15px;
+            }
+            
+            .chamada-texto h1 {
+                font-size: 1.8rem;
+            }
+            
+            .categoria h2 {
+                font-size: 1.6rem;
+            }
+        }
+        
+        .kpop-glow {
+            animation: pulsate 2s infinite alternate;
+        }
+        
+        @keyframes pulsate {
+            0% {
+                text-shadow: 0 0 15px rgba(255, 75, 145, 0.7);
+            }
+            100% {
+                text-shadow: 0 0 20px rgba(255, 75, 145, 1), 0 0 30px rgba(177, 156, 255, 1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="kpop-glow">KPOPLACE</header>
+
+    <section class="chamada">
+        <div class="chamada-texto">
+            <h1>MELHORES MOMENTOS DO K-POP</h1>
+            <p>#kpop #koreanmusic #kpopidols</p>
+        </div>
+
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/h63QMulZTgY?si=uz7Tq5FlE4ob_weP"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-inicture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="categoria">
+        <h2>Vídeos em Destaque</h2>
+        <div class="categoria-videos">
+            <a href="https://youtu.be/h63QMulZTgY?si=uz7Tq5FlE4ob_weP">
+                <img src="https://img.youtube.com/vi/h63QMulZTgY/maxresdefault.jpg" alt="K-pop Video 1" />
+            </a>
+            <a href="https://youtu.be/FwOR5iAri44?si=1187VO5hkZbGXjZf">
+                <img src="https://img.youtube.com/vi/FwOR5iAri44/maxresdefault.jpg" alt="K-pop Video 2" />
+            </a>
+            <a href="https://youtu.be/WDzvp-y5Xm4?si=otiAVod7f8uY2Imc">
+                <img src="https://img.youtube.com/vi/WDzvp-y5Xm4/maxresdefault.jpg" alt="K-pop Video 3" />
+            </a>
+            <a href="https://youtu.be/7nT4-kGpLBk?si=mAOVL7u-0RTVMg3V">
+                <img src="https://img.youtube.com/vi/7nT4-kGpLBk/maxresdefault.jpg" alt="K-pop Video 4" />
+            </a>
+        </div>
+    </section>
+
+</body>
+
+</html>
